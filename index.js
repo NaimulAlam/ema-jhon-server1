@@ -70,6 +70,4 @@ client.connect((err) => {
 //   res.send("Hello World!");
 // });
 
-app.listen(port, () => {
-  console.log(`Port Listing at ${port}`);
-});
+app.listen( process.env.PORT || port );
